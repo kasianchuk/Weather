@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Погодний сайт</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Main</a>
+                </li>
+                <li>
+                    <a href="forecast.html">Weather Forecast</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        
+  
+        
+        <form action="" method="post">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required><br>
+                <label for="surname">Surname</label>
+                <input type="text" name="surname" id="surname" required><br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required> 
+            </fieldset>
+            <fieldset>
+                <legend>Your e-mail</legend>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" pattern="^[A-Za-z0-9.]+@[a-z0-9]+.[A-Za-z]{1,100}" id="email" required>
+            </fieldset>
+            <fieldset>
+                <legend>Your idea for our site</legend>
+                <label for="text">Idea</label>
+                <input type="text" name="text" id="text">
+            </fieldset>
+                <label for="submit"></label>
+                <input type="submit" name="submit" id="submit">
+        </form>
+        
+    </body>
+</html>
