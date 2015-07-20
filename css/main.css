@@ -1,54 +1,161 @@
 body {
-    font-family: Verdana;
-    background-color: #f4f4f2;
-}
-
-nav ul {
-    background-color: PaleVioletRed;
-    list-style: none;
-    padding: 0;
-    width: 200px;
-    border: 1px solid MediumVioletRed;
-}
-
-nav ul li {
-    border-bottom: 1px solid MediumVioletRed;
-    padding: 5px;
-}
-
-nav ul li:last-child {
-    border-bottom: 0;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover{
-    text-decoration: underline;
-}
-
-article{
-    width: 800px;
-}
-
-article header h1 {
-    color:green;
-}
-
-article header p {
-    background-color: red;
-    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E9EAED;
+    width: 1024px;
+    margin: 0 auto;
     
 }
 
-article figure {
-    width: 600px;
-    border: 3px solid black;
-    padding: 5px;
+nav ul {
+ // width: 1024px;
+  background-image: url(../img/bg/bg-menu.png);
+  font-size: 22px;
+  list-style: none;
+  padding: 10px 0 10px 0;
+  border: 1px solid rgb(195, 99, 160);
+  margin: 0px auto 20px;
+  text-align: center;
+  
 }
 
-article figure img {
-    width: 100%;
+nav ul li {
+  padding: 5px;
+  display: inline;
+  word-spacing: 70px;
+
+}
+
+nav ul li:last-child {
+  border-bottom: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.weather {
+    margin: 0px auto 20px;
+    top:30px;
+    position:relative; 
+    width: 1024px;
+    height: 440px;
+    background-image: url(../img/bg/bg-container.png);
+    border: 1px solid rgb(195, 99, 160);
+}
+
+
+.location {
+    color:white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
+    font-size: 40px;
+    text-align: center;
+}
+.clear {
+    clear:both;
+}
+.push50{
+    height: 150px;
+}
+
+footer {
+    position: relative;
+    width: auto;
+    height: 139px;
+    margin: 0px auto 0px;
+    background-image: url(../img/bg/bg-footer.png);
+    border: 1px solid rgb(195, 99, 160);
+    bottom: 0px;
+}
+
+.footer-logo {
+    position:absolute;
+    left:10px;
+    top: 40px;
+}
+.footer-logo p {
+    padding-top: 10px;
+    width:200px;
+    font-size: 12px;
+}
+.footer-logo p span {
+    display: block;
+}
+
+.footer-menu {
+    position: absolute;
+    left: 260px;
+    top:10px;
+}
+.footer-menu p {
+    color: #faed75;
+    border-bottom: 2px solid #727677;
+    font-weight: bold;
+    font-family: "Palatino Linotype"
+}
+
+.footer-menu ul li {
+    padding: 15px 0 0;
+}
+
+.footer-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+.footer-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-subscribe {
+    position: absolute;
+    left: 460px;
+    top:10px;
+}
+.footer-subscribe p {
+    color: #faed75;
+    border-bottom: 2px solid #727677;
+    font-weight: bold;
+    font-family: "Palatino Linotype"
+}
+
+.footer-subscribe img {
+    padding-top: 25px;
+}
+
+.footer-subscribe img:hover {
+background-image: url(../img/subscribe/hover.png);
+}
+
+
+.form-footer {
+    top: 10px;
+    position: absolute;
+    right: 10px;
+}
+
+.form-footer fieldset {
+    padding-top: 19px;
+}
+
+.form-footer legend {
+    color: #faed75;
+    border-bottom: 2px solid #727677;
+    font-weight: bold;
+    font-family: "Palatino Linotype"
+}
+.form-footer label {
+    padding-top: 4px;
+    color:white;
+    float: left;
+}
+.form-footer input {
+float: right;
+}
+
+.form-footer #submit {
+    cursor: pointer;
 }

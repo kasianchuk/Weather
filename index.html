@@ -1,24 +1,84 @@
 <!doctype html>
 <html>
     <head>
-        <title>Погодний сайт</title>
+        <title>Weather in any place</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Main</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="forecast.html">Weather Forecast</a>
+                    <a href="forecast.html">Forecasts</a>
                 </li>
                 <li>
                     <a href="contacts.html">Contacts</a>
                 </li>
             </ul>
         </nav>
+        <div  id="weather">
+            <div id="weather-left-block">
+                <span id="w-img"></span>
+                <span id="temperature"></span>
+                <span class="location"></span>		
+            </div>
+            
+            <div id="weather-right-block">
+                <span id="w-img"></span>
+                <span id="temperature"></span>
+                <span class="location"></span>		
+            </div>      
+        </div>
+        <div class="clear push50"></div>
+        <footer>
+            <div class="footer-logo">
+                <img src="img/footer-logo.png" width="155" height="47" alt="Site logotype">
+                <p>All rights reserved <span>&COPY;Pavlo Kasianchuk 2015</span></p>
+            </div>
+            <div class="footer-menu">
+                <p> Site Menu </p>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="forecast.html">Forecasts</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-subscribe">
+                <p> Join US </p>
+                <a href="#"><img src="img/subscribe/rss1.png" alt="rss icon"></a>
+                <a href="#"><img src="img/subscribe/facebook.png" alt="facebook icon"></a>
+                <a href="#"><img src="img/subscribe/google.png" alt="google+ icon"></a>
+
+            </div>
+            <form class="form-footer" action="" method="get">
+                <fieldset>
+                    <legend>Subscribe on news</legend>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required><br>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" pattern="^[A-Za-z0-9.]+@[a-z0-9]+.[A-Za-z]{1,100}" id="email" required>               
+                </fieldset>
+                <input type="submit" name="submit" id="submit" value="Subscribe">
+            </form>
+            
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+        <script src="script/weatherService.js"></script>
+        <script src="script/script.js"></script>
+            
+        </footer>
         
     </body>
 </html>
