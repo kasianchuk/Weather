@@ -14,7 +14,17 @@
     left:10px;
     height: 300px;
     width: 300px;
-    border:1px solid black;
+    border:2px double rgb(195, 99, 160);
+    border-radius:  0 48px 0 48px;
+}
+
+#temperature {
+    position: absolute;
+    top:100px;
+    left:50px;
+    font-size: 80px;
+    color:white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
 }
 
 #weather-right-block {
@@ -23,6 +33,51 @@
     right: 10px;
     height: 300px;
     width: 600px;
-    border:1px solid black;
+    border:2px double rgb(195, 99, 160);
+    border-radius: 48px;
+}
+#weather-right-block span:first-child {
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
 
+#pressure {
+    position:absolute;
+    top: 210px;
+    left: 47px;
+    font-size: 35px;
+    color:white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
+}
+
+#weather-right-block span:nth-child(2) {
+    position: absolute;
+    top: 30px;
+    left: 253px;
+}
+
+#wind {
+    position:absolute;
+    top: 210px;
+    left: 47px;
+    font-size: 35px;
+    color:white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
+}
+
+
+#weather-right-block span:nth-child(3) {
+    position: absolute;
+    top: 30px;
+    left: 430px;
+}
+
+#humidity {
+    position:absolute;
+    top: 210px;
+    left: 57px;
+    font-size: 35px;
+    color:white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
+}
