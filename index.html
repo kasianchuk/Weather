@@ -30,9 +30,18 @@
             </div>
             
             <div id="weather-right-block">
-                <span id="w-img"></span>
-                <span id="temperature"></span>
-                <span class="location"></span>		
+                <span>
+                    <img src="img/parameters/pressure.png" alt="pressure icon">
+                    <p id="pressure"></p>
+                </span>    
+                <span>
+                    <img src="img/parameters/wind.png" alt="wind icon">
+                    <p id="wind"></p>
+                </span>
+                <span>	
+                    <img src="img/parameters/humidity.png" alt="humidity icon">
+                    <p id="humidity"></p>
+                </span>
             </div>      
         </div>
         <div class="clear push50"></div>
@@ -72,13 +81,10 @@
                 </fieldset>
                 <input type="submit" name="submit" id="submit" value="Subscribe">
             </form>
-            
+        </footer>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
-        <script src="script/weatherService.js"></script>
-        <script src="script/script.js"></script>
-            
-        </footer>
-        
+        <script src="scripts/weatherService.js"></script>
+        <script src="scripts/index.js"></script>        
     </body>
 </html>
