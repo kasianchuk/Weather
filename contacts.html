@@ -6,7 +6,7 @@
         <link rel="shortcut icon" href="img/favicon.ico">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/forecast.css">
+        <link rel="stylesheet" href="css/contacts.css">
     </head>
     <body>
         <nav>
@@ -23,28 +23,17 @@
             </ul>
         </nav>
         <div  class="weather">
-            <form action="" method="post">
+            <form id="form-contacts" action="" method="post">
                 <fieldset>
                     <legend>Personal information</legend>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" required><br>
-                    <label for="surname">Surname</label>
-                    <input type="text" name="surname" id="surname" required><br>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" required> 
-                </fieldset>
-                <fieldset>
-                    <legend>Your e-mail</legend>
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" pattern="^[A-Za-z0-9.]+@[a-z0-9]+.[A-Za-z]{1,100}" id="email" required>
+                    <input type="email" name="email" pattern="^[A-Za-z0-9.]+@[a-z0-9]+.[A-Za-z]{1,100}" id="email" required><br>
+                    <p><label for=feedback> Please, express your opinion</label><br/>
+                    <textarea name="feedback" cols="60" rows="5"></textarea><br/>
+                    <input type="submit" value="Send" id="submit">
                 </fieldset>
-                <fieldset>
-                    <legend>Your idea for our site</legend>
-                    <label for="text">Idea</label>
-                    <input type="text" name="text" id="text">
-                </fieldset>
-                    <label for="submit">Відправити</label>
-                    <input type="submit" name="submit" id="submit">
             </form>
         </div>
         <div class="clear push50"></div>
