@@ -1,0 +1,27 @@
+#form-contacts {
+width:400px;
+margin: 50px auto 0;
+}
+
+#form-contacts legend {
+    font-size: 30px;
+    color:white;
+    padding-bottom: 30px;
+}
+
+#form-contacts label {
+    font-size: 25px;
+} 
+
+#form-contacts input{
+width: 300px;
+float: right;
+}
+
+#form-contacts p{
+padding-top: 20px;
+}
+
+#form-contacts #submit {
+    width: 100px;
+}
